@@ -5,6 +5,7 @@
 - [Podcast](https://failclosed.podbean.com/)
 - [X](https://x.com/failclosed)
 - [Store](https://failclosed.printify.me/)
+- [Buy Me A Coffee (ko-fi)](https://ko-fi.com/failclosed)
 
 ---
 

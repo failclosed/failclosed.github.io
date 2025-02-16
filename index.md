@@ -9,7 +9,7 @@
 
 ---
 
-Welcome to **FailClosed**, a repository of custom GPTs developed to assist with various tasks and domains. Below is a list of the custom GPTs I have created, along with their intended functionality.
+Welcome to **FailClosed**, we are dedicated to cybersecurity, automation, and AI-assisted solutions across various fields. We provide the following custom GPTs for FREE!
 
 We also provide a regular [podcast](https://failclosed.podbean.com/) and [merch](https://failclosed.printify.me/) which we plan to add more to in the coming weeks. If this content is helpful and you feel like being generous, my [Ko-Fi account](https://ko-fi.com/failclosed) link is provided at the top of the page where you can make a donation (thank you!).
 
@@ -31,9 +31,6 @@ We also provide a regular [podcast](https://failclosed.podbean.com/) and [merch]
 ### 4. [**DNS Security Analyzer**](https://chatgpt.com/g/g-67b13ecd6d908191b8a6cbf80e54c1e2-dns-security-analyzer)
    - Helps detect potential DNS hijacking, misconfigurations, and privacy risks.
    - Provides guidance on implementing DNSSEC and other security measures.
-
-## About FailClosed
-FailClosed is dedicated to cybersecurity, automation, and AI-assisted solutions across various fields. If you're interested in learning more or collaborating on a project, feel free to reach out!
 
 ## Hosting on GitHub Pages
 This site is hosted on **GitHub Pages** and is built using Markdown for simplicity and ease of use.

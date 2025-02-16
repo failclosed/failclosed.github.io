@@ -9,7 +9,9 @@
 
 ---
 
-Welcome to **FailClosed**, a repository of custom GPTs developed to assist with various tasks and domains. Below is a list of the custom GPTs I have created, along with their intended functionality and manually updated usage statistics.
+Welcome to **FailClosed**, a repository of custom GPTs developed to assist with various tasks and domains. Below is a list of the custom GPTs I have created, along with their intended functionality.
+
+We also provide a regular [podcast](https://failclosed.podbean.com/) and [merch](https://failclosed.printify.me/) which we plan to add more to in the coming weeks. If this content is helpful and you feel like being generous, my [Ko-Fi account](https://ko-fi.com/failclosed) link is provided at the top of the page where you can make a donation (thank you!).
 
 ## Custom GPTs
 

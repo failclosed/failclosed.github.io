@@ -3,8 +3,8 @@
 ## Navigation
 
 - [Podcast](https://failclosed.podbean.com/)
-- [Store](https://failclosed.printify.me/)
 - [X](https://x.com/failclosed)
+- [Store](https://failclosed.printify.me/)
 
 ---
 

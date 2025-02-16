@@ -1,5 +1,13 @@
 ![FailClosed Logo](https://failclosed.github.io/images/failclosed.jpeg)
 
+## Navigation
+
+- [Home](#failclosed)
+- [Podcast](https://failclosed.podbean.com/)
+- [Store](https://failclosed.printify.me/)
+
+---
+
 Welcome to **FailClosed**, a repository of custom GPTs developed to assist with various tasks and domains. Below is a list of the custom GPTs I have created, along with their intended functionality and manually updated usage statistics.
 
 ## Custom GPTs

@@ -1,43 +1,45 @@
-![FailClosed Logo](https://failclosed.github.io/images/failclosed.jpeg)
+---
+title: "FailClosed – Cybersecurity, Automation & AI-Assisted Solutions"
+---
+
+[![FailClosed Logo](https://failclosed.github.io/images/failclosed.jpeg)](index.html)
 
 ## Navigation
 
 - [Podcast](https://failclosed.podbean.com/)
 - [X](https://x.com/failclosed)
 - [Store](https://failclosed.printify.me/)
-- [Buy Me A Coffee (ko-fi)](https://ko-fi.com/failclosed)
+- [Buy Me A Coffee (ko‑fi)](https://ko-fi.com/failclosed)
 
 ---
 
-Welcome to **FailClosed**, we are dedicated to cybersecurity, automation, and AI-assisted solutions across various fields. We provide the following custom GPTs for FREE!
+# Welcome to **FailClosed**
 
-We also provide a regular [podcast](https://failclosed.podbean.com/) and [merch](https://failclosed.printify.me/) which we plan to add more to in the coming weeks. If this content is helpful and you feel like being generous, my [Ko-Fi account](https://ko-fi.com/failclosed) link is provided at the top of the page where you can make a donation (thank you!).
+We are dedicated to cybersecurity, automation, and AI‑assisted solutions across various fields. At FailClosed, we offer a suite of free custom GPTs designed specifically for IT and cybersecurity professionals.
+
+Check out our [podcast](https://failclosed.podbean.com/) for the latest insights or browse our [merch](https://failclosed.printify.me/) as we continue to expand our offerings. If you find our content valuable, please support us via our [Ko‑Fi page](https://ko-fi.com/failclosed).
 
 ## FREE Custom GPTs
 
-### 1. [**Source Code License Assistant**](https://chatgpt.com/g/g-67b206d82c3081918141e76fca506290-source-code-license-assistant)
-   - Helps developers determine the best open-source licenses for their projects.
-   - Provides recommendations based on project type, intended use, and compatibility with other licenses.
-   - Analyzes existing source code repositories for license compliance issues.
+### [Source Code License Assistant](https://chatgpt.com/g/g-67b206d82c3081918141e76fca506290-source-code-license-assistant)
+Helps developers select the best open‑source licenses based on project type, intended use, and compatibility. It even scans existing repositories for compliance issues.
 
-### 2. [**SMTP Tutor**](https://chatgpt.com/g/g-67b147bbb5bc8191a8f8c49b2a56bfdc-smtp-tutor)
-   - Educates users on Simple Mail Transfer Protocol (SMTP) fundamentals.
-   - Assists in troubleshooting email delivery issues and configuration problems.
-   - Provides best practices for securing SMTP servers and preventing email spoofing.
+### [SMTP Tutor](https://chatgpt.com/g/g-67b147bbb5bc8191a8f8c49b2a56bfdc-smtp-tutor)
+Provides a deep dive into SMTP fundamentals, aids in troubleshooting email delivery and configuration, and shares best practices for securing your SMTP servers.
 
-### 3. [**Shadow Paw**](https://chatgpt.com/g/g-67b141e2f99081919ee147b58fb93091-shadow-paw)
-   - A master ninja cat hacker answering network security questions.
+### [Shadow Paw](https://chatgpt.com/g/g-67b141e2f99081919ee147b58fb93091-shadow-paw)
+A master ninja cat hacker who delivers swift and stealthy answers to network security questions.
 
-### 4. [**DNS Security Analyzer**](https://chatgpt.com/g/g-67b13ecd6d908191b8a6cbf80e54c1e2-dns-security-analyzer)
-   - Helps detect potential DNS hijacking, misconfigurations, and privacy risks.
-   - Provides guidance on implementing DNSSEC and other security measures.
+### [DNS Security Analyzer](https://chatgpt.com/g/g-67b13ecd6d908191b8a6cbf80e54c1e2-dns-security-analyzer)
+Detects potential DNS hijacking, misconfigurations, and privacy risks while guiding you through the implementation of DNSSEC and other protective measures.
 
 ## FREE EBooks
 
-### 1. [**Email Security**](https://failclosed.com/landing?file=download1)
+### [Email Security](https://failclosed.com/landing?file=download1)
 
 ## Hosting on GitHub Pages
-This site is hosted on **GitHub Pages** and is built using Markdown for simplicity and ease of use.
+
+This site is proudly hosted on **GitHub Pages** and built using Markdown for simplicity and ease of use.
 
 ---
 

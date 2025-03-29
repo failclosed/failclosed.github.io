@@ -50,6 +50,7 @@
     .error {
       color: red;
       margin-bottom: 10px;
+      text-align: center;
     }
   </style>
 </head>
@@ -63,7 +64,7 @@
       <div class="checkbox-group">
         <label>
           <input type="checkbox" id="consent" required>
-          I authorize failclosed to use my email address for marketing, sales, and social media communications.
+          I agree to receive communications.
         </label>
       </div>
       <button type="submit">Submit</button>
@@ -71,14 +72,29 @@
   </div>
 
   <script>
-    // On form submission, validate inputs and then redirect to confirmation.html with the chosen file key.
+    // Immediately check if a valid email is already stored
+    (function() {
+      var storedEmail = localStorage.getItem("user_email");
+      // Simple regex to validate email format
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (storedEmail && emailRegex.test(storedEmail)) {
+        // Retrieve the 'file' parameter from the URL query string
+        var urlParams = new URLSearchParams(window.location.search);
+        var fileParam = urlParams.get("file") || "download1"; // default if missing
+        // Redirect immediately to confirmation.html with the file parameter
+        window.location.href = "confirmation.html?file=" + encodeURIComponent(fileParam);
+      }
+    })();
+
+    // Handle form submission if no valid email is stored
     document.getElementById("verificationForm").addEventListener("submit", function(e) {
       e.preventDefault();
       var emailField = document.getElementById("email");
       var consent = document.getElementById("consent").checked;
       var errorDiv = document.getElementById("error");
       errorDiv.textContent = "";
-      
+
+      // Check for valid email and consent
       if (!emailField.checkValidity()) {
          errorDiv.textContent = "Please enter a valid email address.";
          return;
@@ -87,14 +103,14 @@
          errorDiv.textContent = "You must agree to the terms.";
          return;
       }
-      
+
       // Retrieve the 'file' parameter from the URL query string
       var urlParams = new URLSearchParams(window.location.search);
-      var fileParam = urlParams.get("file") || "download1"; // default to download1 if missing
-      
-      // Optionally, store the email in localStorage (if needed for future reference)
+      var fileParam = urlParams.get("file") || "download1"; // default if missing
+
+      // Store the valid email in localStorage
       localStorage.setItem("user_email", emailField.value);
-      
+
       // Redirect to confirmation.html with the file parameter preserved
       window.location.href = "confirmation.html?file=" + encodeURIComponent(fileParam);
     });

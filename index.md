@@ -13,7 +13,7 @@ Welcome to **FailClosed**, we are dedicated to cybersecurity, automation, and AI
 
 We also provide a regular [podcast](https://failclosed.podbean.com/) and [merch](https://failclosed.printify.me/) which we plan to add more to in the coming weeks. If this content is helpful and you feel like being generous, my [Ko-Fi account](https://ko-fi.com/failclosed) link is provided at the top of the page where you can make a donation (thank you!).
 
-## Custom GPTs
+## FREE Custom GPTs
 
 ### 1. [**Source Code License Assistant**](https://chatgpt.com/g/g-67b206d82c3081918141e76fca506290-source-code-license-assistant)
    - Helps developers determine the best open-source licenses for their projects.
@@ -31,6 +31,10 @@ We also provide a regular [podcast](https://failclosed.podbean.com/) and [merch]
 ### 4. [**DNS Security Analyzer**](https://chatgpt.com/g/g-67b13ecd6d908191b8a6cbf80e54c1e2-dns-security-analyzer)
    - Helps detect potential DNS hijacking, misconfigurations, and privacy risks.
    - Provides guidance on implementing DNSSEC and other security measures.
+
+## FREE EBooks
+
+### 1. [**Email Security**]()
 
 ## Hosting on GitHub Pages
 This site is hosted on **GitHub Pages** and is built using Markdown for simplicity and ease of use.

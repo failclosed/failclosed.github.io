@@ -115,7 +115,7 @@
       sessionStorage.setItem('email', emailField.value);
       
       // Redirect to the thank you page
-      window.location.href = "https://failclosed.com/confirmation";
+      window.location.href = "https://failclosed.com/confirmation?file=download1";
     });
   </script>
 </body>

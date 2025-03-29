@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -47,7 +46,7 @@
     <h1>Thank You!</h1>
     <p>Your download is ready. Click the button below to access your digital product.</p>
     <!-- Congratulations, you have completed level 1. If you enjoy my content, please consider supporting me at ko-fi.com/failclosed. Your flag is http://bit.ly/3Y8joi8 -->
-     <a class="download-link" href="https://drive.google.com/file/d/1LMKrL0OsDyP0AQVHqsikjcp7KikgLKL3/view?usp=sharing" download>Download Now</a>
+    <a class="download-link" href="https://drive.google.com/uc?export=download&id=1LMKrL0OsDyP0AQVHqsikjcp7KikgLKL3" download>Download Now</a>
   </div>
   
   <script>

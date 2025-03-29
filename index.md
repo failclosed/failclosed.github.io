@@ -3,18 +3,77 @@ title: "FailClosed – Cybersecurity, Automation & AI-Assisted Solutions"
 ---
 
 <header>
-  <div class="container" style="max-width: 1200px; margin: auto;">
-    <nav style="display: flex; justify-content: space-between; align-items: center; height: 70px; padding: 0 20px;">
+  <style>
+    /* Container for the navigation */
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .logo img {
+      height: 50px;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+    /* Ensure all links are vertically centered */
+    .nav-links li {
+      display: flex;
+      align-items: center;
+    }
+    .nav-links li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      /* Use the nav height to vertically center the text */
+      line-height: 70px;
+      transition: color 0.3s;
+    }
+    .nav-links li a:hover {
+      color: #0a84ff;
+    }
+    /* Responsive navigation for mobile devices */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+      }
+      .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+      }
+      .nav-links li a {
+        line-height: normal;
+      }
+    }
+  </style>
+  <div class="nav-container">
+    <nav>
       <div class="logo">
         <a href="index.html">
-          <img src="https://failclosed.github.io/images/failclosed.jpeg" alt="FailClosed Logo" style="height: 50px;">
+          <img src="https://failclosed.github.io/images/failclosed.jpeg" alt="FailClosed Logo">
         </a>
       </div>
-      <ul class="nav-links" style="list-style: none; display: flex; gap: 20px; margin: 0; padding: 0;">
-        <li><a href="https://failclosed.podbean.com/" style="text-decoration: none; color: #333; font-weight: 500;">Podcast</a></li>
-        <li><a href="https://x.com/failclosed" style="text-decoration: none; color: #333; font-weight: 500;">X</a></li>
-        <li><a href="https://failclosed.printify.me/" style="text-decoration: none; color: #333; font-weight: 500;">Store</a></li>
-        <li><a href="https://ko-fi.com/failclosed" style="text-decoration: none; color: #333; font-weight: 500;">Buy Me A Coffee (ko‑fi)</a></li>
+      <ul class="nav-links">
+        <li><a href="https://failclosed.podbean.com/">Podcast</a></li>
+        <li><a href="https://x.com/failclosed">X</a></li>
+        <li><a href="https://failclosed.printify.me/">Store</a></li>
+        <li><a href="https://ko-fi.com/failclosed">Buy Me A Coffee (ko‑fi)</a></li>
       </ul>
     </nav>
   </div>

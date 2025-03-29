@@ -2,14 +2,23 @@
 title: "FailClosed – Cybersecurity, Automation & AI-Assisted Solutions"
 ---
 
-[![FailClosed Logo](https://failclosed.github.io/images/failclosed.jpeg)](index.html)
-
-## Navigation
-
-- [Podcast](https://failclosed.podbean.com/)
-- [X](https://x.com/failclosed)
-- [Store](https://failclosed.printify.me/)
-- [Buy Me A Coffee (ko‑fi)](https://ko-fi.com/failclosed)
+<header>
+  <div class="container" style="max-width: 1200px; margin: auto;">
+    <nav style="display: flex; justify-content: space-between; align-items: center; height: 70px; padding: 0 20px;">
+      <div class="logo">
+        <a href="index.html">
+          <img src="https://failclosed.github.io/images/failclosed.jpeg" alt="FailClosed Logo" style="height: 50px;">
+        </a>
+      </div>
+      <ul class="nav-links" style="list-style: none; display: flex; gap: 20px; margin: 0; padding: 0;">
+        <li><a href="https://failclosed.podbean.com/" style="text-decoration: none; color: #333; font-weight: 500;">Podcast</a></li>
+        <li><a href="https://x.com/failclosed" style="text-decoration: none; color: #333; font-weight: 500;">X</a></li>
+        <li><a href="https://failclosed.printify.me/" style="text-decoration: none; color: #333; font-weight: 500;">Store</a></li>
+        <li><a href="https://ko-fi.com/failclosed" style="text-decoration: none; color: #333; font-weight: 500;">Buy Me A Coffee (ko‑fi)</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
 ---
 

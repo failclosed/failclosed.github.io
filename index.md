@@ -34,7 +34,7 @@ We also provide a regular [podcast](https://failclosed.podbean.com/) and [merch]
 
 ## FREE EBooks
 
-### 1. [**Email Security**]()
+### 1. [**Email Security**](https://failclosed.com/landing)
 
 ## Hosting on GitHub Pages
 This site is hosted on **GitHub Pages** and is built using Markdown for simplicity and ease of use.

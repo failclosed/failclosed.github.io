@@ -42,12 +42,25 @@
   </style>
 </head>
 <body>
-  <div class="container" id="thank-you-container" style="display: none;">
+  <div class="container" id="thank-you-container" style="display: block;">
     <h1>Thank You!</h1>
-    <p>Your download is ready. Click the button below to access your digital product.</p>
-    <!-- Congratulations, you have completed level 1. If you enjoy my content, please consider supporting me at ko-fi.com/failclosed. Your flag is http://bit.ly/3Y8joi8 -->
-    <a class="download-link" href="https://drive.google.com/uc?export=download&id=1LMKrL0OsDyP0AQVHqsikjcp7KikgLKL3" download>Download Now</a>
+    <p>Your download will start automatically in a few seconds. If it does not, please click the "Download Now" button below.</p>
+    <!-- Congratulations, you have completed level 1. If you enjoy my content, please consider supporting me at https://ko-fi.com/failclosed. Your flag is http://bit.ly/3Y8joi8 -->
+    <a class="download-link" id="downloadBtn" href="https://drive.google.com/uc?export=download&id=1LMKrL0OsDyP0AQVHqsikjcp7KikgLKL3" download>Download Now</a>
   </div>
+
+  <script>
+    // Auto-trigger the download when the page loads
+    window.onload = function() {
+        // Trigger the click event to start the download automatically
+        document.getElementById('downloadBtn').click();
+
+        // Redirect to failclosed.com after 3 seconds
+        setTimeout(function(){
+          window.location.href = "https://failclosed.com";
+        }, 3000);
+    };
+  </script>
   
   <script>
     // Check if the user has validated their email using sessionStorage

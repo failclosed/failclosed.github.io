@@ -68,12 +68,12 @@
       document.getElementById('downloadBtn').href = downloadUrl;
 
       // Auto-trigger the download by simulating a click on the download link
-      document.getElementById('downloadBtn').click();
+      //document.getElementById('downloadBtn').click();
 
       // Redirect to failclosed.com after 3 seconds
-      setTimeout(function(){
-        window.location.href = "https://failclosed.com";
-      }, 3000);
+      //setTimeout(function(){
+      //  window.location.href = "https://failclosed.com";
+      //}, 3000);
     };
   </script>
 </body>

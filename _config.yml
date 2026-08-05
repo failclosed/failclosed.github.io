@@ -290,6 +290,7 @@ defaults:
 
 # Exclude these files from production site
 exclude:
+  - Appraisals
   - CHANGELOG.md
   - CNAME
   - Gemfile

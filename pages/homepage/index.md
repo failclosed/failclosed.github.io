@@ -8,31 +8,23 @@ full-width: true
 ---
 
 <div class="failclosed-intro">
-  <img src="/assets/img/failclosed-logo-color.jpeg" alt="FailClosed Logo" class="failclosed-intro-logo">
-  <div>
-    <h2>Welcome to FailClosed</h2>
-    <p>We are dedicated to cybersecurity, automation, and AI-assisted solutions across various fields. FailClosed also offers <a href="/software">free custom GPTs and other tools</a> designed specifically for IT and cybersecurity professionals.</p>
-    <p>Check out our <a href="https://failclosed.podbean.com/">podcast</a> for the latest insights, browse our <a href="https://failclosed.printify.me/">merch</a>, or follow along on <a href="https://x.com/failclosed">X</a>. If you find our content valuable, please support us via <a href="https://ko-fi.com/failclosed">Ko-fi</a>.</p>
-  </div>
+  <h2>Welcome to FailClosed</h2>
+  <p>We are dedicated to cybersecurity, automation, and AI-assisted solutions across various fields, including a growing library of blog posts, CTF writeups, homelab guides, and projects, plus a suite of <a href="/software">free custom GPTs and other tools</a> designed specifically for IT and cybersecurity professionals.</p>
+  <p>Browse our <a href="https://failclosed.printify.me/">merch</a> or follow along on <a href="https://x.com/failclosed">X</a>. If you find our content valuable, please support us via <a href="https://ko-fi.com/failclosed">Ko-fi</a>.</p>
 </div>
 
 <style>
 .failclosed-intro {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  max-width: 900px;
-  margin: 0 auto 30px;
+  max-width: 700px;
+  margin: 0 auto 40px;
   padding: 0 20px;
-  flex-wrap: wrap;
-}
-.failclosed-intro-logo {
-  width: 120px;
-  height: 120px;
-  flex-shrink: 0;
+  text-align: center;
 }
 .failclosed-intro h2 {
   margin-top: 0;
+}
+.failclosed-intro p {
+  color: #555;
 }
 </style>
 

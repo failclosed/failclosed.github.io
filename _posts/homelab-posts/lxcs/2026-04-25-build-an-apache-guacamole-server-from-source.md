@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting Up Apache Guacamole on a Proxmox LXC Container using Ubuntu 24.04-2, Tomcat 10 and MariaDB)
+title: "Setting Up Apache Guacamole on a Proxmox LXC Container (Ubuntu 24.04-2 → Tomcat 10 → MariaDB)"
 categories: [homelab, lxcs]
 tags: [container, linux, proxmox, apache-guacamole, tomcat, mariadb, java, rdp]
 after-content: [disclaimer-notice.html]
@@ -11,6 +11,8 @@ after-content: [disclaimer-notice.html]
 This started as an effort to use Guacamole to provide browser-based access to a VM located in a different VLAN with RDP and to use an existing haproxy reverse proxy server instead of using Guacamole's nginx reverse proxy server.
 
 PC (VLAN 1) -> haproxy eth0 (VLAN 1) -> haproxy eth1 (VLAN 50) -> Guacamole eth0 (VLAN 50) -> Guacamole eth1 (VLAN 10) -> VM accessed with RDP (VLAN 10)
+
+I chose Ubuntu 24.04-2 as my LXC template, which led to a number of compatibility issues. Apache Guacamole's source is meant to be built for Tomcat 9, which isn't available in Ubuntu 24.04-2's repositories, so that meant building Guacamole from source and using Jakarta EE Migration to convert the compiled client to a version that works under Tomcat 10.
 
 What I expected would be an hour of work or less, ended up taking several hours as I repeatedly encountered obstacles.
 

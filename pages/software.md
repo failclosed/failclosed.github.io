@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Software
+title: Resources
 permalink: /software
-subtitle: Free and paid tools for IT and cybersecurity professionals
+subtitle: Software, GPTs, and eBooks for IT and cybersecurity professionals
 ---
 
-FailClosed builds tools for IT and cybersecurity professionals — currently a suite of free custom GPTs, with more software planned. Free items are marked **Free**; anything sold separately is marked **Buy** and links out to where it's actually purchased.
+FailClosed builds tools for IT and cybersecurity professionals — currently a suite of free custom GPTs and an eBook, with more software planned. Free items are marked **Free**; anything sold separately is marked **Buy** and links out to where it's actually purchased.
 
 <div class="software-grid">
 

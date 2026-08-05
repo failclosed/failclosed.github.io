@@ -16,8 +16,6 @@ To use it, first install the client:
 sudo apt-get install ubuntu-advantage-tools
 ```
 
-<img src="{{ 'assets/img/2025-01-04-checking-ubuntu-pro-compliance-and-hardening-options/install-ubuntu-advantage-tools.png' | relative_url }}" alt="Installing ubuntu-advantage-tools" />
-
 Once attached to a Pro subscription (`sudo pro attach`), check what's actually enabled:
 
 ```

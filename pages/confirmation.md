@@ -38,9 +38,7 @@ show-avatar: false
 <script>
 window.onload = function() {
   var downloadLinks = {
-    "download1": "https://drive.google.com/uc?export=download&id=1LMKrL0OsDyP0AQVHqsikjcp7KikgLKL3",
-    "download2": "https://example.com/path/to/secondfile.pdf",
-    "download3": "https://example.com/path/to/thirdfile.pdf"
+    "download1": "https://drive.google.com/uc?export=download&id=1LMKrL0OsDyP0AQVHqsikjcp7KikgLKL3"
   };
 
   var urlParams = new URLSearchParams(window.location.search);

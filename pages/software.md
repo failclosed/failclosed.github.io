@@ -40,7 +40,7 @@ FailClosed builds tools for IT and cybersecurity professionals — currently a s
 
 ## Guides & eBooks
 
-- [Email Security](/gate?file=download1) — Free
+- [Email Security](https://drive.google.com/uc?export=download&id=1LMKrL0OsDyP0AQVHqsikjcp7KikgLKL3) — Free
 
 <style>
 .software-grid {

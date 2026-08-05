@@ -21,13 +21,13 @@ Tag: [Blog-post]
             {% for badge in page.gh-badge %}
               {% case badge %}
                 {% when 'star'%}
-                  <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&repo={{ gh_repo }}&type=star&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
+                  <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&repo={{ gh_repo }}&type=star&count=true" frameborder="0" scrolling="0" width="120px" height="20px" style="vertical-align: middle;"></iframe>
                 {% when 'watch'%}
-                  <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&repo={{ gh_repo }}&type=watch&v=2&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
+                  <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&repo={{ gh_repo }}&type=watch&v=2&count=true" frameborder="0" scrolling="0" width="120px" height="20px" style="vertical-align: middle;"></iframe>
                 {% when 'fork'%}
-                  <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&repo={{ gh_repo }}&type=fork&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
+                  <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&repo={{ gh_repo }}&type=fork&count=true" frameborder="0" scrolling="0" width="120px" height="20px" style="vertical-align: middle;"></iframe>
                 {% when 'follow'%}
-                  <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&type=follow&count=true" frameborder="0" scrolling="0" width="220px" height="20px"></iframe>
+                  <a href="https://github.com/{{ gh_user }}" target="_blank" rel="noopener" style="display: inline-block; height: 20px; line-height: 0; vertical-align: middle;"><img src="https://img.shields.io/github/followers/{{ gh_user }}?style=social&label=FailClosed" alt="Follow @{{ gh_user }} on GitHub" height="20" style="vertical-align: middle;"></a>
               {% endcase %}
             {% endfor %}
           {% endif %}

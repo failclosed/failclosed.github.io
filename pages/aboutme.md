@@ -7,7 +7,7 @@ css: /assets/css/badges.css
 ---
 
 <div style="display:inline-block;">
-  <iframe src="https://ghbtns.com/github-btn.html?user=4D5A&type=follow&count=true" frameborder="0" scrolling="0" width="220px" height="20px"></iframe>
+  <a href="https://github.com/4D5A" target="_blank" rel="noopener"><img src="https://img.shields.io/github/followers/4D5A?style=social&label=FailClosed" alt="Follow @4D5A on GitHub" height="20"></a>
 </div>
 
 ## Social & Community
@@ -25,7 +25,7 @@ css: /assets/css/badges.css
   
   <!-- Server Fault -->
   <div class="badge-card">
-    <a href="https://serverfault.com/users/335183/user5870571">
+    <a href="https://serverfault.com/users/335183/failclosed">
       <img src="https://serverfault.com/users/flair/335183.png" alt="Server Fault Badge"/>
     </a>
   </div>

@@ -8,7 +8,7 @@ show-avatar: false
 
 <div class="confirmation-container" id="thank-you-container">
   <p>Your download will start automatically in a few seconds. If it does not, please click the "Download Now" button below.</p>
-  <!-- Congratulations, you have completed level 1. If you enjoy my content, please consider supporting me at https://ko-fi.com/failclosed. Your flag is https://bit.ly/email-security-guide-2026-flag -->
+  <!-- Congratulations, you have completed level 1. If you enjoy my content, please consider supporting me at https://ko-fi.com/failclosed. Your flag is https://bit.ly/4bDVNga -->
   <a class="confirmation-download-link" id="downloadBtn" href="" download>Download Now</a>
 </div>
 
@@ -38,7 +38,7 @@ show-avatar: false
 <script>
 window.onload = function() {
   var downloadLinks = {
-    "download1": "https://bit.ly/email-security-guide-2026"
+    "download1": "https://bit.ly/4wdQICw"
   };
 
   var urlParams = new URLSearchParams(window.location.search);

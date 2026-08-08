@@ -42,7 +42,7 @@ FailClosed builds tools for IT and cybersecurity professionals — currently a s
 
 <div class="software-grid">
 
-  <a class="software-card" href="https://drive.google.com/uc?export=download&id=1LMKrL0OsDyP0AQVHqsikjcp7KikgLKL3">
+  <a class="software-card" href="/gate?file=download1">
     <span class="software-badge software-badge-free">Free</span>
     <div class="software-card-title">Email Security</div>
     <div class="software-card-desc">A downloadable guide to SPF, DKIM, DMARC, and defending against spoofed mail.</div>

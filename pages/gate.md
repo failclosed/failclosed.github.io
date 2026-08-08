@@ -7,34 +7,38 @@ show-avatar: false
 ---
 
 <!--
-  GATE — CURRENTLY DISABLED
+  GATE — PASSTHROUGH MODE
 
-  Nothing links to this page right now. /software links straight to the
-  Google Drive file (see pages/software.md), bypassing this page and
-  /confirmation entirely. The old version of this page only wrote the
-  email to localStorage and never sent it anywhere, so it was pulled —
-  it added a click for the visitor and captured nothing real.
+  No email/subscribe prompt is shown to visitors. This page just forwards
+  straight to /confirmation, preserving ?file=, so the visitor sees no
+  extra step. /software links here (/gate?file=download1) instead of
+  straight to the Drive URL, so the redirect actually gets used.
 
-  To re-enable a real email-gated download, backed by an actual Substack
-  subscription instead of the old fake localStorage capture:
+  To turn this into a real email-gated download later, backed by an
+  actual Substack subscription:
 
-    1. Uncomment the block below.
-    2. Replace YOURPUB.substack.com with your real Substack domain — get
+    1. Delete (or comment out) the passthrough <script> block below.
+    2. Uncomment the gate-container block further down.
+    3. Replace YOURPUB.substack.com with your real Substack domain — get
        the exact iframe src from substack.com: Settings -> Embed ->
        Subscribe widget.
-    3. In pages/software.md, change the Email Security link back to
-       /gate?file=download1 instead of the direct Drive URL.
-    4. In pages/confirmation.md, downloadLinks already has "download1"
-       mapped to the Drive URL, so no change needed there unless you add
-       more gated files.
 
-  Known limitation: Substack's embeddable widget doesn't reliably tell the
-  parent page when a signup succeeds (no dependable postMessage/callback
-  event to hook), so the "Continue to your download" link below is always
-  visible — this is an honor-system gate, not an enforced one. It gets you
-  real subscribers in exchange for the download, it just can't hard-block
-  the file behind a verified signup the way a server-side check could.
+  Known limitation if re-enabled: Substack's embeddable widget doesn't
+  reliably tell the parent page when a signup succeeds (no dependable
+  postMessage/callback event to hook), so the "Continue to your download"
+  link would always be visible — an honor-system gate, not an enforced
+  one. It gets real subscribers in exchange for the download, it just
+  can't hard-block the file behind a verified signup the way a
+  server-side check could.
 -->
+
+<script>
+(function() {
+  var urlParams = new URLSearchParams(window.location.search);
+  var fileParam = urlParams.get("file") || "download1";
+  window.location.replace("/confirmation?file=" + encodeURIComponent(fileParam));
+})();
+</script>
 
 <!--
 <div class="gate-container">

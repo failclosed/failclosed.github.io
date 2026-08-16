@@ -1,0 +1,56 @@
+<aside class="ra-notice" role="note" aria-label="Authorized use only">
+  <div class="ra-notice-head">
+    <svg class="ra-notice-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+      <path fill="currentColor" d="M12 2 3 6v6c0 5 3.8 8.6 9 10 5.2-1.4 9-5 9-10V6l-9-4Zm-1 6h2v6h-2V8Zm0 8h2v2h-2v-2Z"/>
+    </svg>
+    <span>Authorized use only</span>
+  </div>
+  <p>The tools and techniques described in Red Team articles on this site are
+  made available for lawful and authorized purposes only. Use them only on
+  networks, systems, and devices that you own, or for which you hold prior
+  written authorization from the owner. They are intended for security research
+  and education, academic use, authorized penetration testing and security
+  assessments conducted under a written agreement, and diagnostics on your own
+  infrastructure.</p>
+  <p>Unauthorized access to, use of, interception of traffic from, or
+  interference with computer systems or networks is prohibited and may
+  constitute a criminal offence under the Computer Fraud and Abuse Act, the
+  Computer Misuse Act 1990, and comparable legislation elsewhere. Determining
+  whether a given use is lawful is the responsibility of the user.</p>
+  <p class="ra-notice-fine">Any software referenced is released under its own
+  license, and any third-party dependencies remain subject to their respective
+  licenses and are not distributed with it.</p>
+</aside>
+
+<style>
+.ra-notice {
+  margin: 2.5rem 0 1.5rem;
+  padding: 1rem 1.25rem 0.75rem;
+  border: 1px solid #e6c9c7;
+  border-left: 4px solid #a32b22;
+  border-radius: 6px;
+  background: #fbf4f3;
+  color: #40352f;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+.ra-notice-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #8f2a22;
+}
+.ra-notice-icon { flex: 0 0 auto; }
+.ra-notice p { margin: 0.55rem 0; }
+.ra-notice-fine { font-size: 0.82rem; color: #6d635d; }
+@media (prefers-color-scheme: dark) {
+  .ra-notice { background: #241b1a; border-color: #5a2f2b; border-left-color: #c0453b; color: #d8cdc8; }
+  .ra-notice-head { color: #e08a80; }
+  .ra-notice-fine { color: #a99f99; }
+}
+</style>

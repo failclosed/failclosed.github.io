@@ -4,16 +4,15 @@ title: Morse Code Packet Transceiver
 categories: [redteam, projects]
 tags: [Python, Network-Administration-Tools, infosec, Detection Engineering]
 thumbnail-img: 'assets/img/2026-08-16-morse-code-packet-transceiver/morse-transceiver-gui-morse-session.png'
-after-content: [disclaimer-notice.html]
 ---
 
 ### Introduction
 
 Every so often it is worth building the obvious bad idea on purpose, just to see what it looks like on the wire. This one sends a text message across a network one symbol at a time, with each dot, dash, and separator travelling in its own ICMP echo request, TCP segment, or UDP datagram. A dot is a packet. A dash is a packet. The gap between words is a packet.
 
-It is a terrible way to move data and an excellent way to look at data moving. That is the entire point. If you have ever tried to explain payload-based data smuggling to someone who has not spent much time in a packet analyser, watching a message spell itself out one frame at a time does more work than a diagram.
+It is a terrible way to move data and an excellent way to look at data moving. That is the entire point. If you have ever tried to explain payload-based data smuggling to someone who has not spent much time in a packet analyzer, watching a message spell itself out one frame at a time does more work than a diagram.
 
-I am filing it under Red Team because the underlying technique, stuffing arbitrary content into protocol payloads that are not supposed to carry it, is one every network defender should be able to recognise. But I want to be clear about what this tool is and is not, because that distinction is the interesting part.
+I am filing it under Red Team because the underlying technique, stuffing arbitrary content into protocol payloads that are not supposed to carry it, is one every network defender should be able to recognize. But I want to be clear about what this tool is and is not, because that distinction is the interesting part.
 
 <img src="{{ 'assets/img/2026-08-16-morse-code-packet-transceiver/morse-transceiver-gui-morse-session.png' | relative_url }}" alt="Morse Code Packet Transceiver GUI showing a completed ICMP session, transmit log on the left and decoded receive log on the right" />
 
@@ -60,7 +59,7 @@ If you want to catch this, or something built along the same lines, there are tw
 
 The easy level is content matching. The default sentinels and the ICMP identifier are fixed values:
 
-| Artefact | Value | Size |
+| Artifact | Value | Size |
 |---|---|---|
 | SOT sentinel | `\xfe\xfeMORSE:SOT\xfe\xfe` | 13 bytes |
 | EOT sentinel | `\xfe\xfeMORSE:EOT\xfe\xfe` | 13 bytes |
@@ -76,7 +75,7 @@ alert icmp any any -> any any (msg:"Morse Packet Transceiver SOT sentinel"; \
 
 That rule works, and it is also close to worthless as a general detection, because every one of those values is configurable. The tool accepts custom sentinels on the command line and in the interface, so a signature keyed to the default strings catches only the person who did not change them.
 
-The durable level is behavioural. What survives a sentinel change is the shape of the traffic, and the shape is unusual regardless of what the payloads contain:
+The durable level is behavioral. What survives a sentinel change is the shape of the traffic, and the shape is unusual regardless of what the payloads contain:
 
 - **Payload sizes.** Every symbol packet carries a single byte. A one-byte ICMP echo request payload is strange on any network. A normal Windows ping carries 32 bytes of padding, and Linux carries 56, typically a timestamp followed by a fixed pattern.
 - **Volume and regularity.** Dozens to hundreds of echo requests to a single destination, evenly spaced, is not what host-to-host ping traffic looks like.
@@ -101,11 +100,5 @@ Two implementation notes that cost me time and might save you some.
 First, scapy dissects packet payloads based on port number. On UDP 53 it parsed the start sentinel as a DNS message, so reading `pkt[Raw].load` returned a single stray byte, the sentinel never matched, and the receiver sat in its idle state discarding everything while the transmit log looked perfectly healthy. The same trap applies to 67, 68, 123, 161, 5353, and any other port scapy has a protocol binding for. Reading the bytes directly off the transport layer instead of relying on the `Raw` layer makes the receiver port agnostic.
 
 Second, running `sniff()` in short repeated calls to keep a stop button responsive opens and closes the capture handle on every iteration, and packets arriving in the gap are lost outright. I measured about 2.5 percent loss that way, which is more than enough to corrupt a message at random and produce checksum failures that look like a bug somewhere else entirely. A single continuous `AsyncSniffer` fixed it.
-
-### Authorized use only
-
-This tool transmits raw packets and captures network traffic. Use it only on networks, systems, and devices that you own, or for which you hold prior written authorization from the owner. It is intended for security research and education, academic use, authorized penetration testing and security assessments conducted under a written agreement, and diagnostics on your own infrastructure.
-
-Unauthorized access to, use of, interception of traffic from, or interference with computer systems or networks is prohibited and may constitute a criminal offence under the Computer Fraud and Abuse Act, the Computer Misuse Act 1990, and comparable legislation elsewhere. Determining whether a given use is lawful is the responsibility of the user.
 
 The program is released under the Apache License 2.0 and requires scapy, which is licensed separately under the GPL v2 and is not distributed with it.

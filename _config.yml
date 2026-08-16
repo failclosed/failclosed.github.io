@@ -283,6 +283,17 @@ defaults:
       comments: true  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
   -
+    # Every post in the Red Team folder automatically gets the authorized-use
+    # notice followed by the standard AS-IS disclaimer, with no per-post front
+    # matter required. New Red Team posts inherit this by living in the folder.
+    scope:
+      path: "_posts/projects-posts/redteam"
+      type: "posts"
+    values:
+      after-content:
+        - redteam-authorized-use.html
+        - disclaimer-notice.html
+  -
     scope:
       path: "" # any file that's not a post will be a "page" layout by default
     values:

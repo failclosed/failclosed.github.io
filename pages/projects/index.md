@@ -10,7 +10,7 @@ full-width: true
 <div class="projects-grid">
 
   {%- assign categories_to_show = 
-      "blueteam:Blue Team"
+      "blueteam:Blue Team,redteam:Red Team"
       | split: "," -%}
 
   {%- for pair in categories_to_show -%}

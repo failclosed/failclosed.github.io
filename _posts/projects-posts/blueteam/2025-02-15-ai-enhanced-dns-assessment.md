@@ -3,7 +3,7 @@ layout: post
 title: AI Enhanced DNS Assessment
 gh-repo: 4D5A/ai_tools
 gh-badge: [follow, star]
-categories: [projects]
+categories: [blueteam, projects]
 tags: [Systems-Administration-Tools, infosec]
 after-content: [disclaimer-notice.html]
 ---

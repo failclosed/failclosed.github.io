@@ -11,7 +11,7 @@ tags: [PowerShell, Cryptography, infosec, Detection Engineering]
 
 This is a small PowerShell project that RC4 encrypts a file, base64 encodes the result, and can optionally pass the base64 through a swapped alphabet on the way out. If you run it in reverse with the same key you get the original file back. The RC4 function comes from [Remko Weijnen](http://www.remkoweijnen.nl/blog/2013/04/05/rc4-encryption-in-powershell/) and the alphabet translation from Doug Finke's [PowerShellTranslate](https://github.com/dfinke/PowerShellTranslate), both used with permission.
 
-It's old, it's simple, and it does what the name says. I am writing about it as a Red Team piece for two reasons, and neither of them is that you should reach for it on an engagement.
+It's simple, and it does what the name says. I am writing about it as a Red Team piece for two reasons, and neither of them is that you should reach for it on an engagement.
 
 RC4 plus base64 plus PowerShell is the canonical shape of a loader, so a benign implementation makes a clean specimen for discussing why that shape gets caught. It is also a tidy example of the difference between obfuscation and encryption, which matters more on the offensive side than people new to it tend to assume.
 
@@ -33,7 +33,7 @@ Resource : ...\rc4-b64.ps1
 
 To run it at all I had to add an exclusion for the directory, which I was not expecting to need for a teaching example.
 
-An educational script built on code published in 2013, openly credited to two named authors, trips a Cobalt Strike adjacent dropper signature. Both upstream pieces are firmly dated: Doug Finke published PowerShellTranslate on 31 March 2013 and Remko Weijnen posted his RC4 function on 5 April 2013, so this project cannot be older than that. That's not a false positive in the usual sense. Defender is matching the structure of the code, and the structure of the code is genuinely the structure of a stager: a byte array key, a 256 iteration key schedule, an XOR keystream loop, and base64 on the output. Nothing about the signature cares that the intent here is a demonstration.
+An educational script, openly credited to two named authors, trips a Cobalt Strike adjacent dropper signature. That's not a false positive in the usual sense. Defender is matching the structure of the code, and the structure of the code is genuinely the structure of a stager: a byte array key, a 256 iteration key schedule, an XOR keystream loop, and base64 on the output. Nothing about the signature cares that the intent here is a demonstration.
 
 As far as detection is concerned, the pattern is the payload.
 
@@ -115,7 +115,7 @@ The theme is the same one from the [Morse packet transceiver post]({{ site.baseu
 
 ### Repository
 
-The project is catalogued in the [Red Team Projects](https://github.com/4D5A/Red-Team-Projects) repository along with the detection guidance above and the credits to Remko Weijnen and Doug Finke. The entry there is documentation only. I see no reason to publish another copy of a script from 2013 that Defender quarantines on sight, and the analysis is the portion with any value.
+The project is catalogued in the [Red Team Projects](https://github.com/4D5A/Red-Team-Projects) repository along with the detection guidance above and the credits to Remko Weijnen and Doug Finke. The entry there is documentation only. I see no reason to publish another copy of a script that Defender quarantines on sight, and the analysis is the portion with any value.
 
 The project itself is licensed under the GPL version 3. That version is deliberate rather than incidental. PowerShellTranslate is Apache 2.0, which the Free Software Foundation treats as incompatible with GPL version 2 but compatible with version 3, so version 2 would leave the project unable to lawfully include the code it is built on.
 

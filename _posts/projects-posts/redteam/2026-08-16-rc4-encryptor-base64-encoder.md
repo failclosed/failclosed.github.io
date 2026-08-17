@@ -107,4 +107,14 @@ If you defend Windows estates, the useful question is not how to catch this exac
 
 The recurring theme, the same one from the [Morse packet transceiver post]({{ site.baseurl }}{% post_url projects-posts/redteam/2026-08-16-morse-code-packet-transceiver %}), is that detections pinned to a tool's specific constants are cheap to write and cheap to evade, while detections built on what a technique structurally has to do are harder to write and much harder to get around. Here the attacker cannot remove the RC4 loop or the base64 without ceasing to do the thing the tool exists to do, and AMSI and script block logging both see straight through the wrapping to that structure.
 
+### Repository
+
+This project is catalogued in the Red Team Projects repository, together with the detection material from this post and the credits to Remko Weijnen and Doug Finke:
+
+**[github.com/4D5A/Red-Team-Projects](https://github.com/4D5A/Red-Team-Projects)**
+
+The entry there is documentation only. There is no reason to publish another copy of a decade-old script that Defender quarantines on sight, and the analysis is the part with any value. The AMSI and script block logging guidance above applies to the whole class of loader, not to this specimen.
+
+If that is useful to you, starring or watching the repository is the easiest way to catch new entries as they are written up.
+
 RC4 and the reversible encodings shown here provide no meaningful confidentiality. Do not use them to protect anything that actually needs protecting.

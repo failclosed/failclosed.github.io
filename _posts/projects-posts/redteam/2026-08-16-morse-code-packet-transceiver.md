@@ -101,4 +101,14 @@ First, scapy dissects packet payloads based on port number. On UDP 53 it parsed 
 
 Second, running `sniff()` in short repeated calls to keep a stop button responsive opens and closes the capture handle on every iteration, and packets arriving in the gap are lost outright. I measured about 2.5 percent loss that way, which is more than enough to corrupt a message at random and produce checksum failures that look like a bug somewhere else entirely. A single continuous `AsyncSniffer` fixed it.
 
+### Repository
+
+This project is catalogued in the Red Team Projects repository, together with the detection material from this post:
+
+**[github.com/4D5A/Red-Team-Projects](https://github.com/4D5A/Red-Team-Projects)**
+
+The entry there is documentation only. The behavioural rule above is the part worth taking, and it is reusable against anything that moves data one small unit at a time, not just this tool.
+
+If that is useful to you, starring or watching the repository is the easiest way to catch new entries as they are written up.
+
 The program is released under the Apache License 2.0 and requires scapy, which is licensed separately under the GPL v2 and is not distributed with it.

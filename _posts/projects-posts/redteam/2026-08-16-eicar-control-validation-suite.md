@@ -127,4 +127,14 @@ Two implementation notes that cost me time. ZIP local headers embed a modificati
 
 The suite targets Windows PowerShell 5.1 with no external modules. The simulation needs Python 3.8 or later. Report export uses pandoc for HTML and DOCX and Edge for PDF, and missing export dependencies are skipped with a warning rather than failing the run. The Linux runner covers the egress and host tests for non-Windows test hosts.
 
-The toolkit is released under the MIT License. The EICAR test file itself is published by the European Institute for Computer Antivirus Research and is unmodified in every use here.
+### Repository
+
+This project is catalogued in the Red Team Projects repository, together with the detection material from this post:
+
+**[github.com/4D5A/Red-Team-Projects](https://github.com/4D5A/Red-Team-Projects)**
+
+The entry there is documentation only. The coverage ratio is the part worth taking, and it needs none of this code, because it comes from telemetry your sensors already produce. Anyone who wants the suite itself can rebuild it from the methodology above.
+
+If that is useful to you, starring or watching the repository is the easiest way to catch new entries as they are written up.
+
+The EICAR test file is published by the European Institute for Computer Antivirus Research and is unmodified in every use here.

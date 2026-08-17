@@ -1,6 +1,8 @@
 ---
 layout: post
 title: EICAR Control Validation Suite
+gh-repo: 4D5A/Red-Team-Projects
+gh-badge: [follow, star]
 categories: [redteam, projects]
 tags: [PowerShell, Python, EICAR, IDS-IPS, TLS-Inspection, Detection Engineering, infosec]
 thumbnail-img: 'assets/img/2026-08-16-eicar-control-validation-suite/console-ids-no-tls.png'

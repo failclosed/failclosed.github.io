@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Morse Code Packet Transceiver
+gh-repo: 4D5A/Red-Team-Projects
+gh-badge: [follow, star]
 categories: [redteam, projects]
 tags: [Python, Network-Administration-Tools, infosec, Detection Engineering]
 thumbnail-img: 'assets/img/2026-08-16-morse-code-packet-transceiver/morse-transceiver-gui-morse-session.png'

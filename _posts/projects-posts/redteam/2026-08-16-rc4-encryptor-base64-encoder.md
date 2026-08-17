@@ -1,6 +1,8 @@
 ---
 layout: post
 title: RC4 Encryptor and Base64 Encoder
+gh-repo: 4D5A/Red-Team-Projects
+gh-badge: [follow, star]
 categories: [redteam, projects]
 tags: [PowerShell, Cryptography, infosec, Detection Engineering]
 ---

@@ -42,22 +42,28 @@ MX Records tell email servers where emails for a specific domain name should be 
 
 Here is a simplified example. Bob owns the domain name example.com. Alice owns the domain name example.net.
 
-Sender: bob@example.com
+```
+Sender:    bob@example.com
 Recipient: alice@example.net
+```
 
 ### DNS Records for example.com
 
-example.com A 127.0.0.1
-mail.example.com A 127.0.0.2
-example.com MX mail.example.com
-2.0.0.127.in-addr.arpa PTR mail.example.com
+```
+example.com               A     127.0.0.1
+mail.example.com          A     127.0.0.2
+example.com               MX    mail.example.com
+2.0.0.127.in-addr.arpa    PTR   mail.example.com
+```
 
 ### DNS Records for example.net
 
-example.net A 127.50.60.1
-mail.example.net A 127.50.62.2
-example.net MX mail.example.net
-2.60.50.127.in-addr.arpa PTR mail.example.net
+```
+example.net               A     127.50.60.1
+mail.example.net          A     127.50.62.2
+example.net               MX    mail.example.net
+2.60.50.127.in-addr.arpa  PTR   mail.example.net
+```
 
 When Bob attempts to send an email to alice@example.net, his email server (mail.example.com) sends a DNS query to its DNS server for the MX Record for example.net. The DNS server responds that mail.example.net is the MX Record for example.net. Bob's email is then sent from mail.example.com to mail.example.net.
 

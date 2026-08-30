@@ -59,6 +59,18 @@ Note: Some of my certifications shown below may be expired or are no longer offe
     </div>
   </div>
 
+  <!-- ISC2 Certified in Cybersecurity -->
+  <div class="timeline-item">
+    <div class="timeline-content">
+      <div class="cert-logo">
+        <img src="/assets/img/certifications/isc2-cc.png" alt="ISC2 Certified in Cybersecurity">
+      </div>
+      <h3>ISC2 Certified in Cybersecurity (CC)</h3>
+      <span class="badge category">IT/Cybersecurity</span>
+      <span class="badge level beginner">Beginner</span>
+    </div>
+  </div>
+
   <!-- Fortinet -->
   <div class="timeline-item">
     <div class="timeline-content">
@@ -91,6 +103,18 @@ Note: Some of my certifications shown below may be expired or are no longer offe
       </div>
       <h3>Certified Ethical Hacker (CEH)</h3>
       <span class="badge category">Ethical Hacking</span>
+      <span class="badge level advanced">Advanced</span>
+    </div>
+  </div>
+
+  <!-- ECSA -->
+  <div class="timeline-item">
+    <div class="timeline-content">
+      <div class="cert-logo">
+        <img src="/assets/img/certifications/ec-council-ecsa.png" alt="EC-Council Certified Security Analyst">
+      </div>
+      <h3>EC-Council Certified Security Analyst (ECSA)</h3>
+      <span class="badge category">Penetration Testing</span>
       <span class="badge level advanced">Advanced</span>
     </div>
   </div>

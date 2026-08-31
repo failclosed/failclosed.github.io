@@ -247,22 +247,14 @@ const DATA = {
   sources: [
     { tag: 'MAP', desc: 'Addressing follows the anonymized report scheme' },
     { tag: 'CFG', desc: 'Proxy backends and ports preserved as-is' },
-    { tag: 'VLAN', desc: 'Segments relabelled A–D plus 7 unnamed' },
+    { tag: 'VLAN', desc: 'Segments relabelled to letters' },
     { tag: 'INF', desc: 'Marked nodes are inferred, not yet confirmed' }
   ],
   bands: [
     { id:'s00', name:'WAN / EXTERNAL', sub:'untagged',        role:'Upstream and offsite', color:'#f0b429' },
     { id:'s01',  name:'VLAN A', sub:'10.20.30.0/24',           role:'Client and management', color:'#a78bfa' },
     { id:'s02', name:'VLAN B — SERVER / DMZ', sub:'10.20.60.0/24', role:'Backend apps, firewalled', color:'#22d3ee' },
-    { id:'s03', name:'VLAN E — AI SERVICES', sub:'10.20.61.0/24', role:'Model hosting', color:'#818cf8' },
-    { id:'s04', name:'VLAN C — IOT', sub:'10.20.40.0/24',     role:'Cameras and devices', color:'#fb7185' },
-    { id:'s05',  name:'VLAN D — GAMING', sub:'10.20.50.0/24',  role:'Consoles', color:'#f472b6' },
-    { id:'s06', name:'VLAN F', sub:'10.20.62.0/24',           role:'Exposed hosts', color:'#fb923c' },
-    { id:'s07', name:'VLAN G', sub:'10.20.63.0/29',           role:'Lab segment', color:'#4ade80' },
-    { id:'s08',  name:'VLAN H', sub:'10.20.64.0/24',           role:'Gateway only', color:'#2dd4bf' },
-    { id:'s09',  name:'VLAN I', sub:'10.20.65.0/24',           role:'Gateway only', color:'#94a3b8' },
-    { id:'s10',  name:'VLAN J', sub:'10.20.66.0/24',           role:'Gateway only', color:'#94a3b8' },
-    { id:'s11',name:'VLAN K — GUEST', sub:'10.20.67.0/24',   role:'Isolated', color:'#64748b' }
+    { id:'s03', name:'VLAN C — AI SERVICES', sub:'10.20.61.0/24', role:'Model hosting', color:'#818cf8' }
   ],
   nodes: [
     { id:'n00', band:'s00', label:'Internet', sub:'ISP uplink', icon:'WAN', kind:'Upstream circuit',
@@ -275,9 +267,9 @@ const DATA = {
       note:'The only copy of the data outside the building. Restore testing is worth scheduling.' },
 
     { id:'n03', band:'s01', label:'Gateway', sub:'10.20.30.1', icon:'GW', kind:'Gateway, firewall, VPN server, DNS',
-      facts:[['Address','10.20.30.1'],['VLANs','11 segments routed'],['Roles','router · firewall · VPN · mgmt UI']],
+      facts:[['Address','10.20.30.1'],['Roles','router · firewall · VPN · mgmt UI']],
       ports:['tcp/443','udp/51820'],
-      note:'Holds a gateway address in all 11 VLANs. Inter-VLAN policy, VPN and management all converge here.' },
+      note:'Inter-VLAN policy, VPN and management all converge here.' },
     { id:'n04', band:'s01', label:'proxy-01', sub:'10.20.30.20', icon:'PRX', kind:'Primary reverse proxy',
       facts:[['Address','10.20.30.20'],['Frontends','http :80/:443'],['','sftp :2222'],['TLS','file-based cert bundle'],['Backends','13 vhosts']],
       ports:['tcp/80','tcp/443','tcp/2222'],
@@ -346,24 +338,7 @@ const DATA = {
 
     { id:'n27', band:'s03', label:'ai', sub:'10.20.61.182:8080', icon:'AI', kind:'Model hosting',
       facts:[['Backend','10.20.61.182:8080'],['Segment','own VLAN']], ports:['tcp/8080'],
-      note:'Given its own VLAN rather than sharing the server segment.' },
-
-    { id:'n28', band:'s04', label:'cameras', sub:'cameras, sync module', icon:'CAM', kind:'IoT devices',
-      facts:[['Isolation','unreachable from client VLAN']], inferred:true,
-      note:'Inter-VLAN filtering to this segment was verified during the assessment.' },
-    { id:'n29', band:'s04', label:'printer', sub:'network printer', icon:'IOT', kind:'IoT device', facts:[['Segment','VLAN C']], inferred:true },
-    { id:'n30', band:'s04', label:'sbc', sub:'single-board computer', icon:'IOT', kind:'IoT device', facts:[['Segment','VLAN C']], inferred:true },
-    { id:'n31', band:'s05', label:'console', sub:'game console', icon:'GAM', kind:'Console', facts:[['Segment','VLAN D']], inferred:true },
-    { id:'n32', band:'s06', label:'exposed hosts', sub:'internet accessible', icon:'EXP', kind:'Deliberately reachable segment',
-      facts:[['Segment','VLAN F']], inferred:true, note:'Contents not documented.' },
-    { id:'n33', band:'s07', label:'lab hosts', sub:'/29 · 6 usable', icon:'LAB', kind:'Lab segment',
-      facts:[['Subnet','/29 — 6 usable addresses']], inferred:true,
-      note:'The only non-/24 in the estate, deliberately small.' },
-    { id:'n34', band:'s08', label:'gateway only', sub:'no hosts recorded', icon:'GW', kind:'Segment with no documented hosts', facts:[['Segment','VLAN H']], inferred:true },
-    { id:'n35', band:'s09', label:'gateway only', sub:'no hosts recorded', icon:'GW', kind:'Segment with no documented hosts', facts:[['Segment','VLAN I']], inferred:true },
-    { id:'n36', band:'s10', label:'gateway only', sub:'no hosts recorded', icon:'GW', kind:'Segment with no documented hosts', facts:[['Segment','VLAN J']], inferred:true },
-    { id:'n37', band:'s11', label:'guest clients', sub:'isolated', icon:'GST', kind:'Guest wireless',
-      facts:[['Segment','VLAN K'],['Access','internet only']], inferred:true }
+      note:'Given its own VLAN rather than sharing the server segment.' }
   ],
   edges: [
     ['n00','n03','trunk','WAN'],
@@ -399,17 +374,7 @@ const DATA = {
     ['n20','n11','storage','audio'],
     ['n26','n11','storage','documents'],
     ['n12','n11','storage','files'],
-    ['n11','n02','backup','offsite'],
-    ['n03','n28','routed','filtered'],
-    ['n03','n29','routed',''],
-    ['n03','n30','routed',''],
-    ['n03','n31','routed',''],
-    ['n03','n32','routed',''],
-    ['n03','n33','routed',''],
-    ['n03','n34','routed',''],
-    ['n03','n35','routed',''],
-    ['n03','n36','routed',''],
-    ['n03','n37','routed','isolated']
+    ['n11','n02','backup','offsite']
   ]
 };
 /*ENDDATA*/
@@ -424,7 +389,7 @@ const TYPES = {
 };
 
 const VIEWS = {
-  logical:  { types: ['trunk','routed','vpn'],            note: 'All 11 segments and what the gateway routes between them.' },
+  logical:  { types: ['trunk','routed','vpn'],            note: 'Segments and what the gateway routes between them.' },
   services: { types: ['trunk','routed','proxy','vpn'],     note: 'Published vhosts and the backend each one reaches.' },
   storage:  { types: ['trunk','storage','backup'],         note: 'Where files live and how copies leave the building.' }
 };

@@ -9,6 +9,8 @@ FailClosed builds tools for IT and cybersecurity professionals. Free items are m
 
 ## Free Custom GPTs
 
+The GPTs below are free to use, but using any custom GPT requires your own ChatGPT subscription from OpenAI (a paid plan is generally required to access custom GPTs) — that subscription is not included with, or provided by, these GPTs. Purchasing, maintaining, and paying for your ChatGPT subscription is entirely your own responsibility; FailClosed does not sell, resell, or provide ChatGPT access of any kind.
+
 <div class="resource-grid">
 
   <a class="resource-card" href="https://chatgpt.com/g/g-67b206d82c3081918141e76fca506290-source-code-license-assistant">

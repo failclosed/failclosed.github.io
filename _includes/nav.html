@@ -38,6 +38,11 @@
           </a>
         </li>
       {%- endif -%}
+      {% if site.social-network-links.newsletter %}
+        <li class="nav-item">
+          <a class="nav-link nav-subscribe-btn" href="{{ site.social-network-links.newsletter }}" data-newsletter-modal-trigger>Subscribe</a>
+        </li>
+      {%- endif -%}
     </ul>
   </div>
 
@@ -60,3 +65,23 @@
 </nav>
 
 {% include search.html %}
+
+<style>
+.nav-subscribe-btn {
+  background: #008AFF;
+  color: #fff !important;
+  border-radius: 999px;
+  padding: 6px 18px !important;
+  margin-left: 4px;
+  transition: background 0.2s;
+}
+.nav-subscribe-btn:hover {
+  background: #0085A1;
+}
+@media (max-width: 1200px) {
+  .nav-subscribe-btn {
+    display: inline-block;
+    margin: 8px 0 0;
+  }
+}
+</style>

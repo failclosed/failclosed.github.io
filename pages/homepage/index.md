@@ -10,7 +10,7 @@ full-width: true
 <div class="failclosed-intro">
   <h2>If security fails, it should fail closed.</h2>
   <p>We are dedicated to cybersecurity, automation, and AI-assisted solutions across various fields, including a growing library of blog posts, CTF writeups, homelab guides, and projects, plus a suite of <a href="/software">free custom GPTs and other tools</a> designed specifically for IT and cybersecurity professionals.</p>
-  <p>Browse our <a href="https://failclosed.printify.me/">merch</a> or follow along on <a href="https://x.com/failclosed">X</a>. If you find our content valuable, please support us via <a href="https://ko-fi.com/failclosed">Ko-fi</a>, or subscribe to <a href="https://news.failclosed.com">Behind the Firewall</a>, our newsletter.</p>
+  <p>Browse our <a href="https://failclosed.printify.me/">merch</a> or follow along on <a href="https://x.com/failclosed">X</a>. If you find our content valuable, please support us via <a href="https://ko-fi.com/failclosed">Ko-fi</a>, or subscribe to <a href="https://news.failclosed.com" data-newsletter-modal-trigger>Behind the Firewall</a>, our newsletter.</p>
 </div>
 
 <style>
@@ -74,7 +74,7 @@ full-width: true
 
   <a href="{{ '/speaking' | relative_url }}" class="homepage-tile">
     <div class="homepage-thumb">
-      <div class="homepage-placeholder">No Image</div>
+      <img src="{{ '/assets/img/homepage/speaking.png' | relative_url }}" alt="Speaking">
     </div>
     <div class="homepage-title">Speaking</div>
     <div class="homepage-count">1 talk</div>

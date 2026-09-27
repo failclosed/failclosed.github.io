@@ -5,7 +5,7 @@ permalink: /speaking
 subtitle: Conference talks, slides, and materials
 ---
 
-I speak at security conferences on offensive AI tooling, homelab security research, and practical red/blue team engineering. Interested in having me speak at yours? See my [Sessionize profile](https://sessionize.com/michael-zinn/) for topics and past talks, or reach out via [X](https://x.com/failclosed).
+I speak at security conferences on offensive AI tooling, homelab security research, and practical red/blue team engineering. Interested in having me speak at yours? Reach out via [X](https://x.com/failclosed).
 
 <div class="talk-card">
   <div class="talk-conference">BSides Cleveland 2026 &middot; Red Team Track &middot; September 26, 2026</div>
@@ -15,7 +15,6 @@ I speak at security conferences on offensive AI tooling, homelab security resear
   <p>The talk walks through a real authorized engagement against a self-owned Proxmox homelab: enumeration by reverse DNS, fingerprinting a live CVE (an unauthenticated arbitrary file read in Gitea, CVE-2026-59774), building a proof-of-concept where none existed publicly, and a read-only container-escape assessment, all with a full command-and-evidence log and a human approving every irreversible step. It also compares how three different Claude models (Sonnet 5, Opus 5, and Opus 4.8) handled the same engagement, and covers the eight reusable skills the agent produced along the way.</p>
   <div class="talk-links">
     <a href="https://github.com/4D5A/presentations/blob/main/BSides%20Cleveland%202026/BSides_Cleveland_presentation_github.pptx">Slides (PowerPoint)</a>
-    <a href="https://sessionize.com/michael-zinn/">Sessionize</a>
   </div>
 </div>
 

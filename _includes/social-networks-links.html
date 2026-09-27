@@ -408,6 +408,18 @@
   </li>
 {%- endif -%}
 
+{%- if site.social-network-links.newsletter -%}
+  <li class="list-inline-item">
+    <a href="{{ site.social-network-links.newsletter }}" title="Behind the Firewall Newsletter">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-envelope-open-text fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Behind the Firewall Newsletter</span>
+   </a>
+  </li>
+{%- endif -%}
+
 {%- if site.social-network-links.microsoft-docs -%}
   <li class="list-inline-item">
     <a href="https://docs.microsoft.com/en-us/users/{{ site.social-network-links.microsoft-docs }}" title="Microsoft Docs">

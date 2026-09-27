@@ -13,6 +13,7 @@ I speak at security conferences on offensive AI tooling, homelab security resear
     <div class="talk-conference">BSides Cleveland 2026 &middot; September 26, 2026</div>
     <div class="talk-title">Pentesting with Claude Code</div>
   </a>
+  <div class="talk-extra">Tools used in this talk: <a href="/software">Claude Skills on the Resources page</a></div>
 
 </div>
 
@@ -44,6 +45,16 @@ I speak at security conferences on offensive AI tooling, homelab security resear
 .talk-title {
   font-size: 1.2em;
   font-weight: bold;
+  color: #008AFF;
+}
+.talk-extra {
+  max-width: 600px;
+  margin: -8px 0 16px;
+  padding: 0 20px;
+  font-size: 0.85em;
+  color: #777;
+}
+.talk-extra a {
   color: #008AFF;
 }
 </style>

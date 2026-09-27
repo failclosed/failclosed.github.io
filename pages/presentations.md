@@ -7,10 +7,14 @@ subtitle: Conference talks and materials
 
 I speak at security conferences on offensive AI tooling, homelab security research, and practical red/blue team engineering. Interested in having me speak at yours? Reach out via [X](https://x.com/failclosed).
 
-<a class="talk-card" href="https://github.com/4D5A/presentations/tree/main/BSides%20Cleveland%202026">
-  <div class="talk-conference">BSides Cleveland 2026 &middot; September 26, 2026</div>
-  <div class="talk-title">Pentesting with Claude Code</div>
-</a>
+<div class="talk-list">
+
+  <a class="talk-card" href="https://github.com/4D5A/presentations/tree/main/BSides%20Cleveland%202026">
+    <div class="talk-conference">BSides Cleveland 2026 &middot; September 26, 2026</div>
+    <div class="talk-title">Pentesting with Claude Code</div>
+  </a>
+
+</div>
 
 <style>
 .talk-card {

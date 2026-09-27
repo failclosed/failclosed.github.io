@@ -10,7 +10,7 @@ full-width: true
 <div class="failclosed-intro">
   <h2>If security fails, it should fail closed.</h2>
   <p>We are dedicated to cybersecurity, automation, and AI-assisted solutions across various fields, including a growing library of blog posts, CTF writeups, homelab guides, and projects, plus a suite of <a href="/software">free custom GPTs and other tools</a> designed specifically for IT and cybersecurity professionals.</p>
-  <p>Browse our <a href="https://failclosed.printify.me/">merch</a> or follow along on <a href="https://x.com/failclosed">X</a>. If you find our content valuable, please support us via <a href="https://ko-fi.com/failclosed">Ko-fi</a>, or subscribe to <a href="https://news.failclosed.com" data-newsletter-modal-trigger>Behind the Firewall</a>, our newsletter.</p>
+  <p>Browse our <a href="https://failclosed.printify.me/">merch</a> or follow along on <a href="https://x.com/failclosed">X</a>. If you find our content valuable, please support us via <a href="https://ko-fi.com/failclosed">Ko-fi</a>, or read <a href="https://news.failclosed.com" class="intro-subscribe-btn">Behind the Firewall</a>, our newsletter.</p>
 </div>
 
 <style>
@@ -26,12 +26,25 @@ full-width: true
 .failclosed-intro p {
   color: #555;
 }
+.intro-subscribe-btn {
+  display: inline-block;
+  background: #008AFF;
+  color: #fff !important;
+  border-radius: 999px;
+  padding: 2px 14px;
+  font-weight: bold;
+  text-decoration: none !important;
+  transition: background 0.2s;
+}
+.intro-subscribe-btn:hover {
+  background: #0085A1;
+}
 </style>
 
 <div class="homepage-grid">
 
   {%- assign categories_to_show = 
-      "blog:Blog,labs:Labs,ctfwriteups:CTF Writeups,homelab:Homelab,projects:Projects" 
+      "blog:Blog,ctfwriteups:CTF Writeups,homelab:Home Lab,labs:Labs,projects:Projects" 
       | split: "," -%}
 
   {%- for pair in categories_to_show -%}

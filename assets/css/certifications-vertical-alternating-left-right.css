@@ -71,11 +71,26 @@
 }
 
 /* Logo */
+.cert-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.timeline-item:nth-child(odd) .cert-logo {
+  justify-content: flex-end;
+}
+
+.timeline-item:nth-child(even) .cert-logo {
+  justify-content: flex-start;
+}
+
 .cert-logo img {
-  max-height: 70px;
+  max-height: 100%;
   max-width: 200px;
   object-fit: contain;
-  margin-bottom: 15px;
 }
 
 /* Badges */
@@ -97,12 +112,26 @@
 /* Lists */
 .timeline-content ul {
   margin-top: 10px;
-  padding-left: 18px;
+  padding-left: 0;
+  list-style: none;
 }
 
 .timeline-content li {
   margin-bottom: 6px;
+  padding-left: 16px;
+  position: relative;
   font-size: 0.95rem;
+}
+
+.timeline-content li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #00b3ff;
 }
 
 /* Responsive */

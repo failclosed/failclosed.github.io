@@ -18,7 +18,7 @@ Note: Some of my certifications shown below may be expired or are no longer offe
         <img src="/assets/img/certifications/google-it-support.png" alt="Google IT Support">
       </div>
       <h3>Google IT Support Certificate</h3>
-      <span class="badge category">IT/Cybersecurity</span>
+      <span class="badge category">IT / Cybersecurity</span>
       <span class="badge level beginner">Beginner</span>
     </div>
   </div>
@@ -30,7 +30,7 @@ Note: Some of my certifications shown below may be expired or are no longer offe
         <img src="/assets/img/certifications/comptia-a-plus.png" alt="CompTIA A+">
       </div>
       <h3>CompTIA A+</h3>
-      <span class="badge category">IT/Cybersecurity</span>
+      <span class="badge category">IT / Cybersecurity</span>
       <span class="badge level beginner">Beginner</span>
     </div>
   </div>
@@ -54,7 +54,7 @@ Note: Some of my certifications shown below may be expired or are no longer offe
         <img src="/assets/img/certifications/comptia-security-plus.png" alt="CompTIA Security+">
       </div>
       <h3>CompTIA Security+</h3>
-      <span class="badge category">IT/Cybersecurity</span>
+      <span class="badge category">IT / Cybersecurity</span>
       <span class="badge level intermediate">Intermediate</span>
     </div>
   </div>
@@ -66,7 +66,7 @@ Note: Some of my certifications shown below may be expired or are no longer offe
         <img src="/assets/img/certifications/isc2-cc.png" alt="ISC2 Certified in Cybersecurity">
       </div>
       <h3>ISC2 Certified in Cybersecurity (CC)</h3>
-      <span class="badge category">IT/Cybersecurity</span>
+      <span class="badge category">IT / Cybersecurity</span>
       <span class="badge level beginner">Beginner</span>
     </div>
   </div>
@@ -78,7 +78,7 @@ Note: Some of my certifications shown below may be expired or are no longer offe
         <img src="/assets/img/certifications/fortinet-3-associate.png" alt="Fortinet Certified Fundamentals">
       </div>
       <h3>Fortinet Certified Fundamentals – Cybersecurity</h3>
-      <span class="badge category">IT/Cybersecurity</span>
+      <span class="badge category">IT / Cybersecurity</span>
       <span class="badge level intermediate">Intermediate</span>
     </div>
   </div>

@@ -42,57 +42,13 @@ FailClosed builds tools for IT and cybersecurity professionals. Free items are m
 
 ## Claude Skills
 
-Reusable [Claude Code](https://claude.com/claude-code) skills for authorized penetration testing engagements — enumeration through report writing. Public source: [github.com/4D5A/AI-Code/tree/main/skills](https://github.com/4D5A/AI-Code/tree/main/skills/).
-
 <div class="resource-grid">
 
-  <div class="resource-card resource-card-static">
+  <a class="resource-card" href="https://github.com/4D5A/AI-Code/tree/main/skills/Generalized%20Pentest%20Skills">
     <span class="resource-badge resource-badge-skill">Skill</span>
-    <div class="resource-card-title">pentest-enumeration</div>
-    <div class="resource-card-desc">Low-noise host/subnet/VLAN/service discovery for an authorized engagement, without hammering shared infrastructure.</div>
-  </div>
-
-  <div class="resource-card resource-card-static">
-    <span class="resource-badge resource-badge-skill">Skill</span>
-    <div class="resource-card-title">pentest-fingerprinting-cve</div>
-    <div class="resource-card-desc">Fingerprints real software and versions on discovered hosts, separating confirmed CVEs from mere patch-currency risk.</div>
-  </div>
-
-  <div class="resource-card resource-card-static">
-    <span class="resource-badge resource-badge-skill">Skill</span>
-    <div class="resource-card-title">pentest-key-systems</div>
-    <div class="resource-card-desc">Identifies the crown-jewel systems in an environment — the ones that yield the broadest access if breached — to prioritize targets.</div>
-  </div>
-
-  <div class="resource-card resource-card-static">
-    <span class="resource-badge resource-badge-skill">Skill</span>
-    <div class="resource-card-title">pentest-offensive-tooling</div>
-    <div class="resource-card-desc">Builds safe, staged proof-of-concept exploits against authorized targets when no public PoC exists yet.</div>
-  </div>
-
-  <div class="resource-card resource-card-static">
-    <span class="resource-badge resource-badge-skill">Skill</span>
-    <div class="resource-card-title">pentest-system-hardening</div>
-    <div class="resource-card-desc">Converts findings into concrete, verifiable step-by-step remediation and hardening guidance.</div>
-  </div>
-
-  <div class="resource-card resource-card-static">
-    <span class="resource-badge resource-badge-skill">Skill</span>
-    <div class="resource-card-title">pentest-diagramming</div>
-    <div class="resource-card-desc">Turns an engagement into clear network-topology and attack-path diagrams for reports, portable to DOCX/PDF.</div>
-  </div>
-
-  <div class="resource-card resource-card-static">
-    <span class="resource-badge resource-badge-skill">Skill</span>
-    <div class="resource-card-title">pentest-report-writing</div>
-    <div class="resource-card-desc">Turns engagement notes into a client-ready report — HTML, PDF, and DOCX from one source.</div>
-  </div>
-
-  <div class="resource-card resource-card-static">
-    <span class="resource-badge resource-badge-skill">Skill</span>
-    <div class="resource-card-title">pentest-report-anonymization</div>
-    <div class="resource-card-desc">Sanitizes a pentest report for external sharing, scrubbing domains, IPs, hostnames, and identifiers while preserving every finding.</div>
-  </div>
+    <div class="resource-card-title">ai-generalized-pentest-skills</div>
+    <div class="resource-card-desc">Eight reusable Claude Code skills covering a full authorized penetration-testing engagement — enumeration, CVE fingerprinting, key-system triage, offensive tooling, system hardening, diagramming, report writing, and report anonymization.</div>
+  </a>
 
 </div>
 
@@ -126,13 +82,10 @@ Reusable [Claude Code](https://claude.com/claude-code) skills for authorized pen
   color: inherit;
   transition: transform 0.2s, box-shadow 0.2s;
 }
-.resource-card:not(.resource-card-static):hover {
+.resource-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   text-decoration: none;
-}
-.resource-card-static {
-  cursor: default;
 }
 .resource-badge {
   display: inline-block;

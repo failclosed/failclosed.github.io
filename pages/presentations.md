@@ -13,7 +13,7 @@ I speak at security conferences on offensive AI tooling, homelab security resear
     <div class="talk-conference">BSides Cleveland 2026 &middot; September 26, 2026</div>
     <div class="talk-title">Pentesting with Claude Code</div>
   </a>
-  <div class="talk-extra">Tools used in this talk: <a href="/software">Claude Skills on the Resources page</a></div>
+  <div class="talk-extra">Tools used in this talk: <a href="/software">ai-generalized-pentest-skills on the Resources page</a></div>
 
 </div>
 

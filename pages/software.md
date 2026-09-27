@@ -15,12 +15,15 @@ FailClosed builds tools for IT and cybersecurity professionals. Free items are m
     <span class="resource-badge resource-badge-skill">Skill</span>
     <div class="resource-card-title">ai-generalized-pentest-skills</div>
     <div class="resource-card-desc">Eight reusable Claude Code skills covering a full authorized penetration-testing engagement — enumeration, CVE fingerprinting, key-system triage, offensive tooling, system hardening, diagramming, report writing, and report anonymization.</div>
+    <div class="resource-card-note">Presented at BSides Cleveland 2026 &mdash; "Pentesting with Claude Code"</div>
   </a>
 
   <a class="resource-card" href="https://github.com/4D5A/AI-Code/tree/main/skills/Generalized%20Blue%20Team%20Skills">
     <span class="resource-badge resource-badge-skill">Skill</span>
     <div class="resource-card-title">ai-generalized-blueteam-skills</div>
     <div class="resource-card-desc">Six reusable Claude Code skills for the defensive side — detection engineering, email-authentication posture audits, Active Directory hygiene audits, log triage and timeline reconstruction, incident-response report writing, and annual security-awareness training builds.</div>
+    <!-- Add a "Presented at ___" note here once a blue-team talk is accepted somewhere, matching the note on the pentest-skills card above -->
+    <div class="resource-card-note">&nbsp;</div>
   </a>
 
 </div>
@@ -113,5 +116,11 @@ The GPTs below are free to use, but using any custom GPT requires your own ChatG
 .resource-card-desc {
   font-size: 0.95em;
   color: #555;
+}
+.resource-card-note {
+  margin-top: 10px;
+  font-size: 0.8em;
+  font-style: italic;
+  color: #888;
 }
 </style>

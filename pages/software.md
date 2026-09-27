@@ -2,7 +2,7 @@
 layout: page
 title: Resources
 permalink: /software
-subtitle: Software, GPTs, Claude Skills, and eBooks for IT and cybersecurity professionals
+subtitle: Software, GPTs, and Claude Skills for IT and cybersecurity professionals
 ---
 
 FailClosed builds tools for IT and cybersecurity professionals. Free items are marked **Free**; anything sold separately is marked **Buy** and links out to where it's actually purchased.
@@ -52,16 +52,10 @@ The GPTs below are free to use, but using any custom GPT requires your own ChatG
     <div class="resource-card-desc">Eight reusable Claude Code skills covering a full authorized penetration-testing engagement — enumeration, CVE fingerprinting, key-system triage, offensive tooling, system hardening, diagramming, report writing, and report anonymization.</div>
   </a>
 
-</div>
-
-## Guides & eBooks
-
-<div class="resource-grid">
-
-  <a class="resource-card" href="/gate?file=download1">
-    <span class="resource-badge resource-badge-free">Free</span>
-    <div class="resource-card-title">Email Security</div>
-    <div class="resource-card-desc">A downloadable guide to SPF, DKIM, DMARC, and defending against spoofed mail.</div>
+  <a class="resource-card" href="https://github.com/4D5A/AI-Code/tree/main/skills/Generalized%20Blue%20Team%20Skills">
+    <span class="resource-badge resource-badge-skill">Skill</span>
+    <div class="resource-card-title">ai-generalized-blueteam-skills</div>
+    <div class="resource-card-desc">Six reusable Claude Code skills for the defensive side — detection engineering, email-authentication posture audits, Active Directory hygiene audits, log triage and timeline reconstruction, incident-response report writing, and annual security-awareness training builds.</div>
   </a>
 
 </div>
